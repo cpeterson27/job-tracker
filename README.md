@@ -53,7 +53,8 @@ These instructions will help you get a local copy running.
 
 Clone the repository:
 
-git clone https://github.com/YOUR_GITHUB_USERNAME/job-tracker.git
+git clone https://github.com/cpeterson27/job-tracker.git
+
 cd job-tracker
 
 

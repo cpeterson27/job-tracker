@@ -5,9 +5,9 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { JobProvider } from "./context/JobContext";
-import { ResumeProvider } from "./context/ResumeContext";
-import { CoverLetterProvider } from "./context/CoverLetterContext";
+import { JobProvider } from "./context/JobProvider";
+import { ResumeProvider } from "./context/ResumeProvider";
+import { CoverLetterProvider } from "./context/CoverLetterProvider";
 import Navbar from "./components/Navbar";
 import ProfilePage from "./pages/ProfilePage";
 import JobsPage from "./pages/JobsPage";
@@ -17,7 +17,7 @@ export default function App() {
     <JobProvider>
       <ResumeProvider>
         <CoverLetterProvider>
-          <Router>
+          <Router basename="/job-tracker">
             <Navbar />
             <div className="p-6">
               <Routes>
@@ -33,3 +33,4 @@ export default function App() {
     </JobProvider>
   );
 }
+
