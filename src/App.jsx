@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { JobProvider } from "./context/JobProvider";
 import { ResumeProvider } from "./context/ResumeProvider";
 import { CoverLetterProvider } from "./context/CoverLetterProvider";
@@ -12,7 +12,7 @@ export default function App() {
     <JobProvider>
       <ResumeProvider>
         <CoverLetterProvider>
-          <Router basename="/job-tracker">
+          <Router>
             <Navbar />
 
             <div className="p-6">
