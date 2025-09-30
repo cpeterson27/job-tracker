@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { JobProvider } from "./context/JobProvider";
 import { ResumeProvider } from "./context/ResumeProvider";
 import { CoverLetterProvider } from "./context/CoverLetterProvider";
