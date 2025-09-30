@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { JobProvider } from "./context/JobProvider";
 import { ResumeProvider } from "./context/ResumeProvider";
 import { CoverLetterProvider } from "./context/CoverLetterProvider";
@@ -12,9 +17,8 @@ export default function App() {
     <JobProvider>
       <ResumeProvider>
         <CoverLetterProvider>
-          <Router>
+          <Router basename="/job-tracker">
             <Navbar />
-
             <div className="p-6">
               <Routes>
                 <Route path="/profile" element={<ProfilePage />} />
@@ -29,6 +33,7 @@ export default function App() {
     </JobProvider>
   );
 }
+
 
 
 
