@@ -60,7 +60,7 @@ cd job-tracker
 
 create a .env file with your 
 # Google Drive Picker Client ID
-VITE_APP_GOOGLE_CLIENT_ID=(placehere)1fbd5a0ml.apps.googleusercontent.com
+VITE_APP_GOOGLE_CLIENT_ID=(placehere)
 
 # Google Cloud Project Number (App ID)
 VITE_APP_GOOGLE_APP_ID=(placehere)
