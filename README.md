@@ -58,6 +58,12 @@ Clone the repo:
 git clone https://github.com/cpeterson27/job-tracker.git
 cd job-tracker
 
+create a .env file with your 
+# Google Drive Picker Client ID
+VITE_APP_GOOGLE_CLIENT_ID=(placehere)1fbd5a0ml.apps.googleusercontent.com
+
+# Google Cloud Project Number (App ID)
+VITE_APP_GOOGLE_APP_ID=(placehere)
 
 Install dependencies:
 

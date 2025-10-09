@@ -17,7 +17,7 @@ export default function App() {
     <JobProvider>
       <ResumeProvider>
         <CoverLetterProvider>
-          <Router basename="/job-tracker">
+          <Router basename="/">
             <Navbar />
             <div className="p-6">
               <Routes>
