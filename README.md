@@ -65,7 +65,27 @@ VITE_APP_GOOGLE_CLIENT_ID=(placehere)1fbd5a0ml.apps.googleusercontent.com
 # Google Cloud Project Number (App ID)
 VITE_APP_GOOGLE_APP_ID=(placehere)
 
-Install dependencies:
+
+# Initialize tailwindcss
+npx tailwindcss init -p
+(this will create tailwind.config.js and postcss.config.js files)
+
+Then open tailwind.config.js and replace its contents with
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+# Install dependencies:
 
 npm install
 
